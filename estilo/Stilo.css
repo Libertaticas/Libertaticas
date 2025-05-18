@@ -1,0 +1,34 @@
+/* Estilo base */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #ffffff;
+  padding: 1rem 2rem;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: #333;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.nav-list li a:hover {
+  background-color: #f9d7ec; /* rosa fraco */
+  border: 1px solid #f9d7ec;
+  border-radius: 6px;
+}
