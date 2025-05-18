@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
+    background-color: #ffffff; /* fundo branco geral */
     font-family: Arial, sans-serif;
     box-sizing: border-box;
 }
@@ -48,14 +48,16 @@ body {
     color: #f9d7ec;
 }
 
-/* Seção abaixo com fundo branco */
+/* Seção abaixo com fundo rosa, borda arredondada e sombra */
 section {
-    margin: 20px 200px;
-    background-color: #ffffff;
-    border-radius: 20px;
-    padding: 20px 10px;
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: #f9d7ec; /* rosa fraco */
+    border-radius: 40px;
+    padding: 30px 40px;
+    color: #333;
     line-height: 2;
-    color: #000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Responsividade básica */
@@ -67,5 +69,6 @@ section {
     
     section {
         margin: 20px 10px;
+        padding: 20px;
     }
 }
