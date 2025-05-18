@@ -1,32 +1,48 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #ffffff; /* fundo branco geral */
+    background-color: #ffffff;
     font-family: Arial, sans-serif;
     box-sizing: border-box;
 }
 
-/* Header com fundo rosa claro */
+/* Header fixo no topo, fundo branco */
 .Header {
-    background-color: #f9d7ec; /* rosa fraco */
     padding: 20px 0;
     text-align: center;
     width: 100%;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
-/* Navbar com fundo branco e linha rosa abaixo */
+/* Navbar fundo branco e linha rosa só embaixo */
 .menu {
-    background-color: #ffffff; /* fundo branco */
-    border-bottom: 3px solid #f9d7ec; /* linha rosa fina abaixo */
+    background-color: #ffffff;
+    border-bottom: 2px solid hsl(345deg 100% 47%);
     padding: 10px 0;
 }
 
+body > section {
+    margin-top: 100px; /* espaço para header fixo */
+    background-color: #ffffff; /* fundo branco */
+    padding: 30px 40px;
+    color: #333;
+    line-height: 2;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Navbar estilos */
 .menu ul {
     padding: 0;
     margin: 0;
     list-style-type: none;
     display: flex;
-    justify-content: center; /* centraliza horizontalmente */
+    justify-content: center;
     gap: 20px;
     align-items: center;
 }
@@ -35,7 +51,7 @@ body {
     display: inline;
 }
 
-/* Estilizando os botões da navbar com o estilo do botão-82-pushable */
+/* Botões da navbar (button-82) */
 .menu button.button-82-pushable {
     position: relative;
     border: none;
@@ -50,7 +66,6 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* Sombra do botão */
 .menu button.button-82-pushable .button-82-shadow {
     position: absolute;
     top: 0;
@@ -64,7 +79,6 @@ body {
     transition: transform 600ms cubic-bezier(.3, .7, .4, 1);
 }
 
-/* Borda com gradiente rosa */
 .menu button.button-82-pushable .button-82-edge {
     position: absolute;
     top: 0;
@@ -81,7 +95,6 @@ body {
     );
 }
 
-/* Frente do botão - rosa forte */
 .menu button.button-82-pushable .button-82-front {
     display: block;
     position: relative;
@@ -102,7 +115,6 @@ body {
     }
 }
 
-/* Hover, active, focus effects */
 .menu button.button-82-pushable:hover {
     filter: brightness(110%);
     -webkit-filter: brightness(110%);
@@ -132,26 +144,15 @@ body {
     outline: none;
 }
 
-/* Seção abaixo com fundo rosa, borda arredondada e sombra */
-section {
-    max-width: 900px;
-    margin: 30px auto;
-    background-color: #f9d7ec; /* rosa fraco */
-    border-radius: 40px;
-    padding: 30px 40px;
-    color: #333;
-    line-height: 2;
-}
-
-/* Responsividade básica */
+/* Responsividade */
 @media (max-width: 768px) {
     .menu ul {
         flex-direction: column;
         gap: 10px;
     }
     
-    section {
-        margin: 20px 10px;
+    body > section {
+        margin-top: 130px; /* mais espaço no mobile se quiser */
         padding: 20px;
     }
 }
